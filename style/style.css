@@ -40,18 +40,7 @@ img{
     margin-top: 2.5vw;
     font-size: 2.5rem;
 }
-/* .usuario{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 2.5vw;
-}
-.usuario input{
-    width: 22vw;
-    height: 2.5vh;
-    border: solid 1px #000048;
-    border-radius: 3px;
-} */
+
 
 .senha{
     margin-top: 2vw;
@@ -70,7 +59,6 @@ img{
     outline: none;
     box-sizing: border-box;
     font-weight: 500;
-
 }
 
 .usuario {
@@ -97,15 +85,10 @@ border-radius: 3px;
 }
    
 
-/* ::placeholder {
-    font-weight: 800;
-    padding-left: 0.5vw;
-} */
-
 .btn{
     margin-top: 2.5vw;
     width: 7vw;
-    height: 3vh;
+    height: 3.5vh;
     background-color: #000048;
     color: #fff;
     font-weight: 800;
