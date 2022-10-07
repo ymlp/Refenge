@@ -10,11 +10,43 @@
 <body>
     <header class="cabecalho">
         <div class="opcoes">
-            <button class="OpsCabe1">Estoque</button>
-            <button class="OpsCabe2">Entrada</button>
-            <button class="OpsCabe3">Saída</button>        
+            <button class="opsCabe1">Estoque</button>
+            <button class="opsCabe2">Entrada</button>
+            <button class="opsCabe3">Saída</button>        
         </div>
     </header>
+    <article class="corpo">
+        <div class="logoEstoque">
+            <img src="imagens/refenger_logo.png" alt="Logo Refenger">
+        </div>
+        <div class="pesquisa">
+            <div class="barra_busca">
+                <input type="text" placeholder="Pesquisa...." >
+            </div>
+            <button class="btn_busca"><img src="imagens/lupa.png" alt="Lupa"></button>
+            <select name="filtros" class="filtros" placeholder="all">
+                <option value="default" selected>default</option>
+                <option value="Porta">Porta</option>
+            </select>
+        </div>
+        <div class="tabela">
+            <div class="opcoes">
+                <div class="op1">
+                        Estoque
+                </div>
+                <div class="op2">
+                        Kits           
+                </div>
+                <div class="op3">
+                        Portas            
+                </div>
+                <div class="op4">
+                        Parafusos etc...   
+                </div>
+            </div>
+
+        </div>
+    </article>
     
 </body>
 <script src="script/script.js"></script>

@@ -24,16 +24,42 @@ body{
     width: 40vw;
     height: 100%;
 }
-.OpsCabe{
+.opsCabe1{
     width: 10vw;
     height: 100%;
     background-color: #fff;
     border:solid 1px #000;
     color: #000;
     font-weight: 800;
+    cursor: pointer;
 }
 
-img{
+
+.opsCabe2{
+    width: 10vw;
+    height: 100%;
+    background-color: #fff;
+    border:solid 1px #000;
+    color: #000;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+
+.opsCabe3{
+    width: 10vw;
+    height: 100%;
+    background-color: #fff;
+    border:solid 1px #000;
+    color: #000;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+
+.corpo img{
     width: 100%;
 }
 
@@ -113,4 +139,126 @@ border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* Estoque */
+
+.logoEstoque img{
+    width:110%;
+    margin-bottom: 2vh;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+}
+.barra_busca{
+    width: 35vw;
+    height: 2.5vh;
+    display: flex;
+    align-items: center;
+    border : 1px solid #000048;
+    border-radius: 3px;
+    margin-right: 2vw;
+}
+.barra_busca input{
+    display: table-cell;
+    width: 90%;
+    margin-left: 0.5vw;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: 500;
+    color:#000;
+}
+
+.pesquisa .btn_busca{
+    background-color: #000048;
+    color: #fff;
+    margin-right: 2vw;
+    height: 3.5;
+    width: 5vw;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.pesquisa .btn_busca img{
+    width:47%;
+    height: 80%;
+    cursor: pointer;
+}
+
+.filtros{
+    width: 7vw;
+    height: 3vh;
+    border : 1px solid #000048;
+    border-radius: 3px;
+}
+
+.tabela{
+    margin-top: 5vh;
+    display: flex;
+    width: 65vw;
+    height: 60vh;
+    background-color: #e6e6e6;
+    border: 1px solid #000048;
+    border-radius: 3px;
+}
+.tabela .opcoes{
+    background-color: #000048;
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tabela .opcoes {
+    color:#fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.tabela .opcoes .op1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 100%;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+    background-color: #494981;
+    color: #fff;
+    border-bottom: none;
+}
+.tabela .opcoes .op2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 100%;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+}
+
+.tabela .opcoes .op3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 100%;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+}   
+
+.tabela .opcoes .op4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    height: 100%;
+    border-right: 1px solid #fff;
+    cursor: pointer;
 }
