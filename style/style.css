@@ -265,7 +265,7 @@ border-radius: 3px;
     cursor: pointer;
 }
 
-.tabela .colunas{
+.colunas{
     display: flex;
     align-items: center;
     background-color: #494981;
@@ -274,15 +274,34 @@ border-radius: 3px;
     font-size: 1.2rem;
     height: 3.5vh;
 }
-.tabela .colunas .categorias{
+.faixa{
+    display: flex;
+    align-items: center;
+    height: 3.5vh;
+}
+.categorias{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12vw;
+    width: 11vw;
     height: 100%;
     border-left: solid 1px #000;
     flex-wrap: wrap;
 }
+.colunas #nom_col{
+
+    border: none;
+}
+.colunas #itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw; 
+    height: 100%;
+    border-left: solid 1px #000;
+    flex-wrap: wrap;
+}
+
 /* Entrada */
 
 .botoes{
