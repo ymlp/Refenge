@@ -221,6 +221,7 @@ border-radius: 3px;
     color:#fff;
     font-weight: 600;
     font-size: 1.1rem;
+    border-bottom: 1px #000 solid;
 }
 
 .tabela .opcoes .op1{
@@ -292,39 +293,64 @@ border-radius: 3px;
 
     border: none;
 }
-.colunas #itens{
+.nom_col{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12vw; 
+    width: 16vw; 
+    height: 100%;
+    border-right: solid 1px #000;
+    flex-wrap: wrap;
+}
+
+.ite_col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34vw; 
+    height: 100%;
+    border-right: solid 1px #000;
+    flex-wrap: wrap;
+}
+.poSerPro_col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20.5vw; 
+    height: 100%;
+    flex-wrap: wrap;
+}
+.obs_para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23vw;
+    border-left: 1px #000 solid;
+    height: 100%;
+}
+.valUni_para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
     height: 100%;
     border-left: solid 1px #000;
     flex-wrap: wrap;
 }
-
 /* Entrada */
 
 .botoes{
     width: 30vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-top: 3.5vh;
+    margin-top: 4vh;
 }
 .btnAdd{
     background-color: #000048;
     border-radius: 3px;
     font-weight: 800;
     width: 10vw;
-    color: #fff;
-    height: 3vh;
-    cursor: pointer;
-}
-.btnOk{
-    background-color: #000048;
-    border-radius: 3px;
-    font-weight: 800;
-    width: 7vw;
     color: #fff;
     height: 3vh;
     cursor: pointer;
