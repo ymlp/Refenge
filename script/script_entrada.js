@@ -1,9 +1,11 @@
+/* Navegador 
+Início*/
+
 var opEstoque = document.querySelector(".opsCabe1");
 var opEntrada = document.querySelector(".opsCabe2");
 var opSaida = document.querySelector(".opsCabe3");
 var paginaAtual = document.title;
 
-/* Navegador */
 opEntrada.addEventListener("click", (e)=>{
     open("entrada.html","_self");
     paginaAtual = "Entrada";
@@ -19,10 +21,12 @@ opEstoque.addEventListener("click", (e)=>{
     paginaAtual = "Estoque";
     console.log(paginaAtual);
 });
+/* Navegador 
+Fim*/
 
 
-
-/* Troca de botão selecionado no navegar conforme a pagina atual*/
+/* Troca de botão selecionado no navegar conforme a pagina atual
+Início*/
 switch(paginaAtual){
     case "Estoque":
         opEstoque.style.backgroundColor = "#494981";
@@ -39,8 +43,12 @@ switch(paginaAtual){
         break;
 };
 
+/* Troca de botão selecionado no navegar conforme a pagina atual
+Fim*/
 
-/* Troca de cor conforme a opção selecionada e altera oque é exposto nas colunas */
+
+/* Troca de cor conforme a opção selecionada e altera oque é exposto nas colunas  
+Início*/
 var opcoesGeral = document.querySelector(".opcoes");
 var opTabela1 = document.querySelector(".op1");
 var opTabela2 = document.querySelector(".op2");
@@ -56,13 +64,6 @@ var opcao = "estoque";
 var colunas = document.querySelector(".colunas");
 var categorias = document.querySelector(".categorias");
 var faixa = document.querySelector(".faixa");
-
-/* Mudança de cor dos botões */
-
-
-
-
-
 
 opTabela1.addEventListener("click", ()=>{
     /* Alteração de cor */
@@ -285,11 +286,31 @@ opTabela4.addEventListener("click", ()=>{
 
 });
 
+/* Troca de cor conforme a opção selecionada e altera oque é exposto nas colunas  
+Fim*/
 
-var janelaAdd = document.createElement("iframe");
+/* Chamada da tela adicionar item
+Início */
+var btnAddEntrada = document.querySelector(".btnAdd");
+var corpo = document.querySelector(".corpo");
 
-btnAddEntrada.addEventListener("click", (e)=>{
-    corpo.appendChild(janelaAdd);
-    blur.style.backgroundColor = "black";
-    
+btnAddEntrada.addEventListener("click", ()=>{
+
+   var blur = document.createElement("div");
+   var classe = document.createAttribute("class");
+   classe.value = "blur";
+   blur.setAttributeNode(classe);
+   corpo.appendChild(blur);
+   var iframe = document.createElement("iframe");
+   classe = document.createAttribute("class");
+   classe.value = "iframe_add"; 
+   iframe.setAttributeNode(classe);
+   blur.appendChild(iframe);
+   var src = document.createAttribute("src");
+   src.value = "addEntrada.html";
+   iframe.setAttributeNode(src);
+   
 });
+
+/* Chamada da tela adicionar item em iframe
+Fim */
