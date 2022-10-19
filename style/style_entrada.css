@@ -28,7 +28,7 @@ body{
     width: 10vw;
     height: 100%;
     background-color: #fff;
-    border:solid 1px #000;
+    border:solid 1px #000048;
     color: #000;
     font-weight: 800;
     cursor: pointer;
@@ -69,78 +69,6 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 35vw;
-    height: 32vh;
-    border: 2px solid #000048;
-    border-radius: 3px;
-}
-.login h1{
-    margin-top: 2.5vw;
-    font-size: 2.5rem;
-}
-
-.senha{
-    margin-top: 2vw;
-    width: 22vw;
-    height: 2.5vh;
-    display: table;
-    border : 1px solid #000048;
-    border-radius: 3px;
-}
-
-.senha input{
-    display: table-cell;
-    width: 90%;
-    margin-left: 0.5vw;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-    font-weight: 500;
-
-}
-
-.usuario {
-margin-top: 2vw;
-width: 22vw;
-height: 2.5vh;
-display: table;
-border : 1px solid #000048;
-border-radius: 3px;
-}
-
-::placeholder{
-    font-weight: 800;
-}
-.usuario input {
-    display: table-cell;
-    width: 90%;
-    margin-left: 0.5vw;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-    font-weight: 500;
-
-}
-   
-
-.btn{
-    margin-top: 2.5vw;
-    width: 7vw;
-    height: 3.5vh;
-    background-color: #000048;
-    color: #fff;
-    font-weight: 800;
-    border-radius: 3px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* Estoque/Entrada */
 
 .logoEstoque img{
     width:110%;
@@ -221,7 +149,7 @@ border-radius: 3px;
     color:#fff;
     font-weight: 600;
     font-size: 1.1rem;
-    border-bottom: 1px #000 solid;
+    border-bottom: 1px #000048 solid;
 }
 
 .tabela .opcoes .op1{
@@ -286,7 +214,7 @@ border-radius: 3px;
     align-items: center;
     width: 11vw;
     height: 100%;
-    border-left: solid 1px #000;
+    border-left: solid 1px #000048;
     flex-wrap: wrap;
 }
 .colunas #nom_col{
@@ -299,7 +227,7 @@ border-radius: 3px;
     align-items: center;
     width: 16vw; 
     height: 100%;
-    border-right: solid 1px #000;
+    border-right: solid 1px #000048;
     flex-wrap: wrap;
 }
 
@@ -309,7 +237,7 @@ border-radius: 3px;
     align-items: center;
     width: 34vw; 
     height: 100%;
-    border-right: solid 1px #000;
+    border-right: solid 1px #000048;
     flex-wrap: wrap;
 }
 .poSerPro_col{
@@ -325,7 +253,7 @@ border-radius: 3px;
     justify-content: center;
     align-items: center;
     width: 23vw;
-    border-left: 1px #000 solid;
+    border-left: 1px #000048 solid;
     height: 100%;
 }
 .valUni_para{
@@ -334,10 +262,10 @@ border-radius: 3px;
     align-items: center;
     width: 15vw;
     height: 100%;
-    border-left: solid 1px #000;
+    border-left: solid 1px #000048;
     flex-wrap: wrap;
 }
-/* Entrada */
+
 
 .botoes{
     width: 30vw;
@@ -354,4 +282,173 @@ border-radius: 3px;
     color: #fff;
     height: 3vh;
     cursor: pointer;
+}
+.blur{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #00000047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iframe_add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px #000048 solid;
+    width: 45vw;
+    height: 60vh;
+}
+.bar_sup{
+    width: 100%;
+    height: 6vh;
+    background-color: #000048;
+    display: flex;
+    justify-content: flex-end;
+}
+.bar_sup .btn_sair{
+    background-color: #fff;
+    width: 7vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px #f4f4f4 solid;
+}
+.bar_sup .btn_sair img{
+    width: 50%;
+}
+.conteudo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 94vh;
+}
+.conteudo h1{
+    margin-top: 6vh;
+}
+.conteudo .linha1{
+    display: flex;
+    width: 77%;
+    margin-top: 8vh;
+    justify-content: space-between;
+}
+.conteudo .linha1 .prod_add{
+    border: 1px solid #000048;
+    border-radius: 3px;
+    height: 4vh;
+    width: 60vw;
+    display: table;
+    background-color: #fff;
+}
+.conteudo .linha1 .prod_add input{
+    border: none;
+    width: 44vw;
+    height: 4vh;
+    outline: none;
+    margin-left:1vw ;
+}
+::placeholder{
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-top: 0.5vh;
+}
+.conteudo .linha1 .qtd_add{
+    border: 1px solid #000048;
+    border-radius: 3px;
+    width: 11vw;
+    height: 4vh;
+    display: table;
+    background-color: #fff;
+}
+.conteudo .linha1 .qtd_add input{
+    border: none;
+    width: 11vw;
+    height: 4vh;
+    outline: none;
+    margin-left: 1vw;
+    border-radius: 3px;
+}
+.conteudo .linha2{
+    display: flex;
+    width: 77%;
+    margin-top: 5vh;
+    justify-content: space-between;
+}
+.conteudo .linha2 .valUni{
+    width: 21vw;
+    height: 4.5vh;
+    border: 1px solid #000048;
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+    margin-right:1vw ;
+    outline: none;
+    font-weight: 800;
+    color: #727171;
+    font-size: 1.1rem;
+}
+.conteudo .linha2 .dat{
+    border: 1px solid #000048;
+    border-radius:3px ;
+    height: 4.5vh;
+    outline: none;
+    font-weight: 800;
+    color: #727171;
+    font-size: 1.1rem;
+}
+.conteudo .linha2 .uso{
+    border: 1px solid #000048;
+    border-radius: 3px;
+    width: 20vw;
+    height: 4.5vh;
+    outline: none;
+    font-weight: 800;
+    color: #727171;
+    font-size: 1.1rem;
+}
+
+.conteudo .linha3{
+    display: flex;
+    width: 77%;
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo .linha3 .obs{
+    width: 100%;
+    height: 40vh;
+    border-radius: 3px;
+    border:1px solid #000048;
+    background-color: #fff;
+}
+.conteudo .linha3 .obs textarea{
+    width: 98%;
+    resize:none;
+    border-radius: 3px;
+    border:none;
+    margin-left: 1vw;
+    outline: none;
+    font-size: 1.1rem;
+}
+.conteudo .botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+.conteudo .botoes .btn_can{
+    background-color: #000048;
+    color: #fff;
+    font-weight: 800;
+    width: 17vw;
+}
+.conteudo .botoes .btn_ok{
+
 }
