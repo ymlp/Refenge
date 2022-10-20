@@ -293,6 +293,8 @@ Fim*/
 Início */
 var btnAddEntrada = document.querySelector(".btnAdd");
 var corpo = document.querySelector(".corpo");
+var btn_ok = document.querySelector(".btn_ok");
+var btn_can = document.querySelector(".btn_can");
 
 btnAddEntrada.addEventListener("click", ()=>{
 
@@ -311,6 +313,14 @@ btnAddEntrada.addEventListener("click", ()=>{
    iframe.setAttributeNode(src);
    
 });
+debugger;
+btn_ok.addEventListener("click", ()=>{
+    debugger;
+    corpo.remove(blur);
+});
 
 /* Chamada da tela adicionar item em iframe
 Fim */
+
+var l = document.querySelector("linha1");
+l.style.backgroundColor = "Blue";
