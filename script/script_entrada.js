@@ -63,6 +63,7 @@ var opcao = "estoque";
 var colunas = document.querySelector(".colunas");
 var categorias = document.querySelector(".categorias");
 var faixa = document.querySelector(".faixa");
+var abaAtu = 1;
 
 opTabela1.addEventListener("click", ()=>{
     /* Alteração de cor */
@@ -75,7 +76,6 @@ opTabela1.addEventListener("click", ()=>{
     opTabela4.style.backgroundColor = "#000048";
     opTabela4.style.color = "#fff";
 
-    debugger;
     faixa.remove(colunas);
     faixa = document.createElement("div");
     var classe = document.createAttribute("class");
@@ -125,8 +125,7 @@ opTabela1.addEventListener("click", ()=>{
     valUni.setAttributeNode(classe);
     valUni.innerHTML += "Valor unitário";
     faixa.appendChild(valUni);
-
-    
+    abaAtu = 1;
 
 });
 
@@ -142,7 +141,7 @@ opTabela2.addEventListener("click", ()=>{
     opTabela4.style.backgroundColor = "#000048";
     opTabela4.style.color = "#fff";
 
-    debugger;
+  
     faixa.remove(colunas);
     faixa = document.createElement("div");
     var classe = document.createAttribute("class");
@@ -169,10 +168,7 @@ opTabela2.addEventListener("click", ()=>{
     podSerPro.setAttributeNode(classe);
     podSerPro.innerHTML += "Podem ser produzidos";
     faixa.appendChild(podSerPro);   
-    
-    
-    
-
+    abaAtu = 2; 
 });
 
 opTabela3.addEventListener("click", ()=>{
@@ -197,7 +193,7 @@ opTabela3.addEventListener("click", ()=>{
     opTabela4.style.backgroundColor = "#000048";
     opTabela4.style.color = "#fff";
 
-    debugger;
+  
     faixa.remove(colunas);
     faixa = document.createElement("div");
     var classe = document.createAttribute("class");
@@ -224,7 +220,7 @@ opTabela3.addEventListener("click", ()=>{
     podSerPro.setAttributeNode(classe);
     podSerPro.innerHTML += "Podem ser produzidos";
     faixa.appendChild(podSerPro);   
-    
+    abaAtu = 3;
     
 });
 opTabela4.addEventListener("click", ()=>{
@@ -240,7 +236,7 @@ opTabela4.addEventListener("click", ()=>{
 
     opcao = "parafusos"; 
     
-    debugger;
+
     faixa.remove(colunas);
     faixa = document.createElement("div");
     var classe = document.createAttribute("class");
@@ -282,6 +278,7 @@ opTabela4.addEventListener("click", ()=>{
     obs.setAttributeNode(classe);
     obs.innerHTML += "Observação";
     faixa.appendChild(obs);
+    abaAtu = 4;
 
 });
 
@@ -290,26 +287,71 @@ Fim*/
 
 /* Chamada da tela adicionar item
 Início */
-var btnAddEntrada = document.querySelector(".btnAdd");
+var btnAddEnt = document.querySelector(".btnAdd");
 var corpo = document.querySelector(".corpo");
 var addEntrada = document.createElement("div");
 classe = document.createAttribute("class");
 classe.value = "addEstoque"; 
 var addEst = document.querySelector(".addEstoque");
+var addKit = document.querySelector(".addKits");
 addEntrada.setAttributeNode(classe);
 
-btnAddEntrada.addEventListener("click", ()=>{
-        addEst.style.zIndex = "1";
-        addEst.style.opacity = "1";
-});
-
 var btn_can = document.querySelector(".btn_can");
+var btn_ok = document.querySelector(".btn_ok");
+var btn_sair = document.querySelector(".btn_sair");
 
-btn_can.addEventListener("click", ()=>{
-    addEst.style.zIndex = "-1";
-    addEst.style.opacity = "0";
+
+btnAddEnt.addEventListener("click", ()=>{
+var btn_sair = document.querySelector(".btn_sair");
+
+    switch(abaAtu){
+        case 1:       
+            addEst.style.zIndex = "1";
+            addEst.style.opacity = "1";
+ 
+            btn_ok.addEventListener("click", ()=>{
+                addEst.style.zIndex = "-1";
+                addEst.style.opacity = "0";
+                /* Codigo de lançamento no banco */
+            });
+    
+            btn_can.addEventListener("click", ()=>{
+                addEst.style.zIndex = "-1";
+                addEst.style.opacity = "0";
+            });
+    
+            btn_sair.addEventListener("click", ()=>{
+                addEst.style.zIndex = "-1";
+                addEst.style.opacity = "0";
+            });
+        break;
+        case 2:
+            var btn_sair1 = document.querySelector(".addKits .bar_sup .btn_sair");
+            addKit.style.opacity = "1";
+            addKit.style.zIndex = "1";
+            debugger;
+            btn_sair1.addEventListener("click", ()=>{
+                debugger;
+                addKit.style.zIndex = "-1";
+                addKit.style.opacity = "0";
+            });
+        break;
+        case 3:
+    
+        break;
+        case 4:
+    
+        break;
+    }
 });
-          
+
+
+
+
+
+
+
+
 
 /* Navegador 
 Início*/

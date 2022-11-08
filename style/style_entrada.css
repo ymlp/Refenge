@@ -284,32 +284,18 @@ body{
     height: 3vh;
     cursor: pointer;
 }
-.blur{
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background-color: #00000047;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.iframe_add{
-    position: absolute;
-    top:20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    width: 40vw;
-    height: 50vh;
-}
+
+
+/* AddEstoque 
+Início */
+
 .bar_sup{
     width: 100%;
     height: 4vh;
     background-color: #000048;
     display: flex;
     justify-content: flex-end;
+    border-bottom: 1px #000048 solid;
 }
 .bar_sup .btn_sair{
     background-color: #fff;
@@ -318,7 +304,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px #f4f4f4 solid;
+    border-bottom: 1px #000048 solid;
+    cursor: pointer;
 }
 .bar_sup .btn_sair img{
     width: 40%;
@@ -330,21 +317,21 @@ body{
     flex-direction: column;
     background-color: #f4f4f4;
     width: 100%;
-    height: 55vh;
+    height: 61.4vh;
 }
 .conteudo h1{
-    margin-top: 6vh;
+    margin-top: 3vh;
 }
 .conteudo .linha1{
     display: flex;
     width: 90%;
-    margin-top: 6vh;
+    margin-top: 5vh;
     justify-content: space-between;
 }
 .conteudo .linha1 .prod_add{
     border: 1px solid #000048;
     border-radius: 3px;
-    height: 4vh;
+    height: 3vh;
     width: 26vw;
     display: table;
     background-color: #fff;
@@ -352,7 +339,7 @@ body{
 .conteudo .linha1 .prod_add input{
     border: none;
     width: 26vw;
-    height: 4vh;
+    height: 3vh;
     outline: none;
     margin-left:1vw;
     font-weight: 800;
@@ -366,14 +353,14 @@ body{
     border: 1px solid #000048;
     border-radius: 3px;
     width: 11vw;
-    height: 4vh;
+    height: 3vh;
     display: table;
     background-color: #fff;
 }
 .conteudo .linha1 .qtd_add input{
     border: none;
     width: 11vw;
-    height: 4vh;
+    height: 3vh;
     outline: none;
     margin-left: 1vw;
     border-radius: 3px;
@@ -382,12 +369,12 @@ body{
 .conteudo .linha2{
     display: flex;
     width: 90%;
-    margin-top: 5vh;
+    margin-top: 4vh;
     justify-content: space-between;
 }
 .conteudo .linha2 .valUni{
-    width: 21vw;
-    height: 4.5vh;
+    width: 11vw;
+    height: 3vh;
     border: 1px solid #000048;
     border-radius: 3px;
     background-color: #fff;
@@ -397,25 +384,29 @@ body{
     font-weight: 500;
     color: #727171;
     font-size: 1rem;
+    cursor: pointer;
 }
 .conteudo .linha2 .dat{
     border: 1px solid #000048;
     border-radius:3px ;
-    height: 4.5vh;
+    height: 3vh;
     outline: none;
     font-weight: 500;
     color: #727171;
     font-size: 1rem;
+    width: 10vw;
+    cursor:text;
 }
 .conteudo .linha2 .uso{
     border: 1px solid #000048;
     border-radius: 3px;
-    width: 20vw;
-    height: 4.5vh;
+    width: 15vw;
+    height: 3vh;
     outline: none;
     font-weight: 500;
     color: #727171;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .conteudo .linha3{
@@ -427,7 +418,7 @@ body{
 }
 .conteudo .linha3 .obs{
     width: 100%;
-    height: 35vh;
+    height: 25vh;
     border-radius: 3px;
     border:1px solid #000048;
     background-color: #fff;
@@ -437,6 +428,7 @@ body{
     resize:none;
     border-radius: 3px;
     border:none;
+    border-right: 1px solid #000048;
     margin-left: 1vw;
     outline: none;
     font-size: 1rem;
@@ -445,15 +437,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40%;
-    margin-top: 7vh;
+    width: 50%;
+    margin-top: 2vh;
 }
 .conteudo .botoes .btn_can{
     background-color: #000048;
     color: #fff;
     font-weight: 800;
-    width: 17vw;
-    height: 5vh;
+    width: 10vw;
+    height: 3vh;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -461,16 +453,30 @@ body{
     background-color: #000048;
     color: #fff;
     font-weight: 800;
-    width: 10vw;
-    height: 5vh;
+    width: 7vw;
+    height: 3vh;
     border-radius: 3px;
     cursor: pointer;
 }
 .addEstoque{
-    width: 50vw;
-    height: 70vh;
-    border: 1px solid #000;
+    width: 45vw;
+    height: 65.5vh;
+    border: 1px solid #000048;
     position: absolute;
     opacity: 0; 
      z-index: -1; 
+}
+
+/* AddEstoque 
+fim */
+
+/* AddKits 
+Início */
+.addKits{
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    width: 50vw;
+    height: 75vh;
+    border: 1px solid #000048;
 }
