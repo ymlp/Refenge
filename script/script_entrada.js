@@ -302,10 +302,16 @@ var btn_sair = document.querySelector(".btn_sair");
 
 
 btnAddEnt.addEventListener("click", ()=>{
-var btn_sair = document.querySelector(".btn_sair");
+
 
     switch(abaAtu){
-        case 1:       
+        case 1:    
+        
+            var btn_sair = document.querySelector(".btn_sair");
+            var addItens = document.querySelector(".addItens");
+            var btn_ok = document.querySelector(".addEstoque .conteudo .botoes .btn_ok");
+            var addEst = document.querySelector(".addEstoque");
+
             addEst.style.zIndex = "1";
             addEst.style.opacity = "1";
  
@@ -327,20 +333,117 @@ var btn_sair = document.querySelector(".btn_sair");
         break;
         case 2:
             var btn_sair1 = document.querySelector(".addKits .bar_sup .btn_sair");
+            var btn_ok1 = document.querySelector(".addKits .conteudo .botoes .btn_ok");
+            var btn_add1 = document.querySelector(".addKits .conteudo .botoes .btn_add");
             addKit.style.opacity = "1";
             addKit.style.zIndex = "1";
-            debugger;
+           
             btn_sair1.addEventListener("click", ()=>{
-                debugger;
+        
                 addKit.style.zIndex = "-1";
                 addKit.style.opacity = "0";
             });
+
+            btn_ok1.addEventListener("click", ()=>{
+                addKit.style.zIndex = "-1";
+                addKit.style.opacity = "0";
+                /* codigo de add na tabela */
+            });
+
+            btn_add1.addEventListener("click", ()=>{
+                addItens.style.zIndex = "2";
+                addItens.style.opacity = "1";
+
+            });
+
+            var btn_okAddItens = document.querySelector(".addItens .btn_ok");
+            var btn_sairAddItens = document.querySelector(".addItens .btn_sair");
+
+            btn_sairAddItens.addEventListener("click",()=>{
+                addItens.style.zIndex = "-1";
+                addItens.style.opacity  = "0";
+                /* codigo de adicionar itens a array */
+            });
+
+            btn_okAddItens.addEventListener("click",()=>{
+                addItens.style.zIndex = "-1";
+                addItens.style.opacity  = "0";
+                /* codigo de adicionar itens a array */
+            });
         break;
         case 3:
-    
+            var addPortas = document.querySelector(".addPortas");
+            addPortas.style.zIndex = "1";
+            addPortas.style.opacity = "1"; 
+
+            var btn_add = document.querySelector(".addPortas .btn_add");
+            var addItens  = document.querySelector(".addPortas .addItens");
+
+            btn_add.addEventListener("click", ()=>{
+                addItens.style.zIndex = "1";
+                addItens.style.opacity = "1"; 
+            });
+
+            var btn_ok = document.querySelector(".addPortas .conteudo .botoes .btn_ok");
+
+            btn_ok.addEventListener("click", ()=>{
+                addPortas.style.zIndex = "-1";
+                addPortas.style.opacity = "0"; 
+            });
+
+
+            var btn_sair = document.querySelector(".addPortas .bar_sup .btn_sair");
+
+            btn_sair.addEventListener("click", ()=>{
+                addPortas.style.zIndex = "-1";
+                addPortas.style.opacity = "0"; 
+            });
+
+            btn_ok = document.querySelector(".addPortas .addItens .btn_ok");
+          
+            btn_ok.addEventListener("click", ()=>{
+                addItens.style.zIndex = "-1";
+                addItens.style.opacity = "0"; 
+                /* Codigo de adição na array */
+            });
+
+            btn_sair = document.querySelector(".addPortas .addItens .bar_sup .btn_sair");
+
+            btn_sair.addEventListener("click", ()=>{
+                addItens.style.zIndex = "-1";
+                addItens.style.opacity = "0"; 
+            });
+
         break;
         case 4:
-    
+            var addParafusos = document.querySelector(".addParafusos");
+
+            addParafusos.style.zIndex = "1";
+            addParafusos.style.opacity = "1";
+
+            var btn_ok = document.querySelector(".addParafusos .conteudo .botoes .btn_ok");
+
+            btn_ok.addEventListener("click", ()=>{
+              
+                addParafusos.style.zIndex = "-1";
+                addParafusos.style.opacity = "0";
+                /* Lancamento no banco de dados */
+            });
+            
+            var btn_sair = document.querySelector(".addParafusos .bar_sup .btn_sair");
+
+            btn_sair.addEventListener("click", ()=>{
+                addParafusos.style.zIndex = "-1";
+                addParafusos.style.opacity = "0";
+            });
+
+            var btn_can = document.querySelector(".addParafusos .conteudo .botoes .btn_can");
+
+            btn_can.addEventListener("click", ()=>{
+                addParafusos.style.zIndex = "-1";
+                addParafusos.style.opacity = "0";
+            });
+
         break;
     }
 });

@@ -22,7 +22,7 @@
             </div>
             <div class="pesquisa">
                 <select name="filtros" class="filtros" placeholder="all">
-                    <option value="default" selected>default</option>
+                    <option value="default" selected>Default</option>
                     <option value="Porta">Porta</option>
                 </select>
                 <div class="barra_busca">
@@ -104,7 +104,9 @@
         </div>
         <div class="addKits">
             <div class="bar_sup">    
-                <div class="btn_sair"><img src="imagens/X.png" alt=""></div>
+                <div class="btn_sair">
+                    <img src="imagens/X.png" alt="">
+                </div>
             </div>
             <div class="conteudo">
                 <h1>Kits</h1>
@@ -113,6 +115,7 @@
                     <div class="nomProd">
                         <input type="text" placeholder="Produto">
                     </div>
+                    <h3>Uso</h3>
                     <select name="uso" class="uso" placeholder="Default" id="">
                         <option value="1">TL</option>
                         <option value="2">ISO</option>
@@ -123,8 +126,8 @@
                         <div class="opcoes">
                             <div class="op1">Produto</div>
                             <div class="op2">Quantidade</div>
-                          
                         </div>
+                    </div>
                 </div>
                 <div class="botoes">
                     <button class="btn_add">Adicionar</button>
@@ -133,8 +136,119 @@
 
                 </div>
             </div>
-        </div>
         
+            <div class="addItens">
+                <div class="bar_sup">    
+                    <div class="btn_sair">
+                        <img src="imagens/X.png" alt="">
+                    </div>
+                </div>
+
+                <h1>Adicionar item</h1>
+                <div class="campos">
+                    <div class="nomKit">
+                        <input type="text" placeholder="Nome Kit">
+                    </div>
+                    <div class="qtd">
+                        <input type="number" name="qtd" >
+                    </div>  
+                </div>            
+                <button class="btn_ok">OK</button>              
+            </div>
+        </div>
+        <div class="addPortas">
+            <div class="bar_sup">    
+                <div class="btn_sair">
+                    <img src="imagens/X.png" alt="">
+                </div>
+            </div>
+            <div class="conteudo">
+                <h1>Portas</h1>
+
+                <div class="linha1">
+                    <div class="nomProd">
+                        <input type="text" placeholder="Produto">
+                    </div>              
+                   
+                </div>
+                <div class="linha2">
+                    <div class="tabela">
+                        <div class="opcoes">
+                            <div class="op1">Produto</div>
+                            <div class="op2">Quantidade</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="botoes">
+                    <button class="btn_add">Adicionar</button>
+                    <button class="btn_rem">Remover</button>
+                    <button class="btn_ok" >OK</button>
+
+                </div>
+            </div>
+
+            <div class="addItens">
+                <div class="bar_sup">    
+                    <div class="btn_sair">
+                        <img src="imagens/X.png" alt="">
+                    </div>
+                </div>
+
+                <h1>Adicionar item</h1>
+                <div class="campos">
+                    <div class="nomKit">
+                        <input type="text" placeholder="Nome Kit">
+                    </div>
+                    <div class="qtd">
+                        <input type="number" name="qtd" >
+                    </div>  
+                </div>            
+                <button class="btn_ok">OK</button>              
+            </div>
+        </div>
+        <div class="addParafusos">
+            <div class="bar_sup">    
+                <div class="btn_sair"><img src="imagens/X.png" alt=""></div>
+            </div>
+            <div class="conteudo">
+        
+                <h1>Adicionar Item</h1>
+                <div class="linha1">
+                    <div class="prod_add">
+                        <input type="text" name="produtos" placeholder="Produtos">
+                    </div>
+                    <div class="qtd_add">
+                        <input type="number" name="qtd" placeholder="Qtd">
+                    </div>
+                    
+                </div>
+        
+                <div class="linha2">
+                    
+                    <select name="" class="uso" id="">
+                        <option value="0">Interno</option>
+                        <option value="1">Portas TL</option>
+                        <option value="2">Portas ISO</option>
+                        <option value="3">Cortinas</option>
+                    </select>  
+             
+                    <input type="date" class="dat">
+               
+                </div>
+        
+                <div class="linha3">
+                    <div class="obs">
+                        <textarea placeholder="Observação" class="obs" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div> 
+        
+                <div class="botoes">
+                    <button class="btn_can">Cancelar</button>
+                    <button class="btn_ok">OK</button>
+                </div>
+                    
+            </div>
+        </div>
     
 <script  src="script/script_entrada.js"></script>  
 </body>
